@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.to-my-right{
+    border-style: dotted;
+    padding: 20px;
+    margin: 20px;
+    border-color: rgb(94, 39, 39);
+}
+
+.over-my-head{
+    opacity: 0.5;
+    font-style: oblique;
+    text-align: center
+    
+}
+
+body{
+    background-image: url("gloomy-evening.jpeg");
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("sunset-2.jpeg");
+    background-color: #cccccc;
+    
+}
+
+h2{
+    text-align: center;
+    color: rgb(255, 255, 214);
+    border-style: outset;
+    padding: 20px;
+    margin: 20px;
+}
+
+.poem-first{
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+}
+
