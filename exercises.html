@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+    * {
+        cursor: url("fish-cursor.png"), default;
+    }
+    body {
+         background-image: url("background-2.jpg");
+         background-repeat: no-repeat; 
+         background-size: cover;
+        }
+
+        div.relative {
+            position: relative;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: 2200px;
+            overflow: hidden;
+        }
+
+        div.absolute {
+            position: absolute;
+        }
+
+        #fish {
+            top: 1400px;
+            left: 20px;
+        }
+
+        #narwhal {
+            top: 200px;
+            right: 80px;
+        }
+
+        #shark{
+            top: 500px;
+            right: 100px;
+        }
+
+        #clam{
+            right: 200px;
+            top: 1800px;
+        }
+
+        #fishs{
+            top: 1100px;
+            right:500px;
+        }
+
+        #bubbles{
+            left: 20%;
+            top: 40%;
+        }
+
+        #bubbles-2{
+            right:5%;
+            top: 10%;
+        }
+
+</style>
+
+</head>
+<body>
+    <div class="navbar">
+        <a class="active" href="index.html"><img src="updated-logo.png" style="width:150px;height:30px"></a>
+    </div>
+
+    <div class="relative">
+           <div class="absolute" id="fish">
+              <a href="./five-variations copy/main-poem.html"><img src="fish-gif.gif" height="500px" width="500px"></a>
+           </div>
+
+           <div class="absolute" id="narwhal">
+            <a href="./3001 - drawing-with-code/index.html"><img src="narwhal.gif" height="200px" width="200px"></a>
+         </div>
+
+           <div class="absolute" id="shark">
+             <a href="./hypertext_project/bake_a_cake.html"><img src="shark-gif.gif" height="600px" width="600px"></a>
+           </div>
+
+           <div class="absolute" id="fishs">
+            <img src="fishs.gif" height="200px" width="200px">
+          </div>
+
+           <div class="absolute" id="clam">
+            <a href="exercise 3.pdf"><img src="clam.gif" height="500px" width="500px"></a>
+          </div>
+
+          <div class="absolute" id="bubbles">
+            <img src="bubbles.gif" height="600px" width="450px">
+          </div>
+
+          <div class="absolute" id="bubbles-2">
+            <img src="bubbles.gif" height="600px" width="450px">
+          </div>
+
+    </div>
+
+
+    
+    <script src="p5.min.js"></script>
+    <script>
+        // query selector for each html element you want to move
+        const shark = document.querySelector("#shark");
+        const fish = document.querySelector("#fish");
+        const fishs = document.querySelector("#fishs");
+        const narwhal = document.querySelector("#narwhal")
+
+        // variable that contains the width of the screen
+        let width = screen.width;
+
+        // initial position for the animals from the CSS above
+        let fishPositionX = 20;
+        let fishPositionY = 1400;
+        let sharkPosition = 100;
+        let fishsPosition = 500;
+        let narwhalPosition = 80;
+        
+        // speed or rate of change
+        const sharkSpeed = 5;
+        const fishSpeed = 1;
+        const fishsSpeed = 6;
+        const narwhalSpeed = 4;
+
+        function setup() {
+            // nothing here
+        }
+        function draw() {
+            // changing position based on prior position and speed
+            sharkPosition = sharkPosition + sharkSpeed;
+            fishPositionX = fishPositionX + fishSpeed;
+            fishPositionY = fishPositionY + fishSpeed;
+            fishsPosition = fishsPosition + fishsSpeed;
+            narwhalPosition = narwhalPosition + narwhalSpeed;
+
+            // setting the CSS position 
+            shark.style["right"] = sharkPosition + "px";
+            narwhal.style["right"] = narwhalPosition + "px";
+            fishs.style["right"] = fishsPosition + "px";
+            fish.style["left"] = fishPositionX + "px";
+            fish.style["top"] = fishPositionY + "px";
+            // console.log(sharkPosition);
+
+            // conditional statement to reset position when it goes off the screen
+            if (sharkPosition > width) {
+                sharkPosition = -600;
+            }
+
+            if (fishsPosition > width) {
+                fishsPosition = -600;
+            }
+
+            if (narwhalPosition > width) {
+                narwhalPosition = -600;
+            }
+
+
+            if (fishPositionY > 2500) {
+                fishPositionY = 1200;
+                fishPositionX = -300;
+            }
+        }
+    </script>
+</body>
+</html>

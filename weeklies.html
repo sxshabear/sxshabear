@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        display: border-box;
+        overflow-x: hidden;
+         background-image: url("background-2.jpg");
+         background-repeat: no-repeat; 
+         background-size: cover;
+        }
+
+        * {
+        cursor: url("fish-cursor.png"), default;
+            }
+
+        .weeklies-wrapper {
+            color: white;
+            font-size: 15px;
+            width: 100%;
+        }
+
+        .weekly-left  div:last-child { 
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+
+        .weekly-left {
+            border: 2px solid white;
+            border-radius: 100px;
+            padding: 5px;
+            background-color: rgba(255,255,255,25%);
+            position: relative;
+            width: 1000px;
+            height: 350px;
+            left: -950px;
+            transition: left 1s;
+            transition-timing-function: ease;
+            display: grid;
+            grid-template-columns: 9fr 1fr;
+            grid-gap: 80px;
+        }
+
+        .weekly-left div:last-child {
+            text-align: center;
+            margin-right: 0;
+            padding-left: 60px;
+        }
+
+        .weekly-left div:first-child {
+            margin-top: 60px;
+            margin-left: 40px;
+        }
+
+        .weekly-left:hover {
+            left: 0px;
+        }
+
+        .weekly-right  div:first-child {
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+
+        .weekly-right {
+            border: 2px solid white;
+            border-radius: 100px;
+            padding: 5px;
+            background-color: rgba(255,255,255,25%);
+            position: relative;
+            width: 1000px;
+            height: 350px;
+            /* right: -2490px; */
+            right: -95%;
+            transition: right 1s;
+            transition-timing-function: ease;
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+            grid-gap: 20px;
+        }
+
+        .weekly-right div {
+            text-align: center;
+        }
+
+        .weekly-right div:last-child{
+            margin-top: 60px;
+            margin-right: 40px;
+        }
+
+        .weekly-right:hover {
+        /* right: -1540px; */
+        right: -60%;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a class="active" href="index.html"><img src="updated-logo.png" style="width:150px;height:30px"></a>
+    </div>
+
+<div class="weeklies-wrapper">
+
+    <div class="weekly-left" id="A">
+        <div>Throughout the second week of class, we expanded more on the different
+            functions of HTML. Before this class, I had never used a program like
+            visual studio code or thought I would even learn how to code. It seemed
+            like something that was too complex for me to pick up. However, after
+            these first two weeks, I feel that I have a good general understanding of
+            some of the basic functions of HTML. We learned how to perform actions
+            such as adding paragraphs, links, images, and lists to a webpage. Through
+            the extensions we downloaded in class I was able to see the webpage I was
+            making live and see the changes in real time. I inserted images of two
+            kitties in my first webpage and then linked those images to a second
+            webpage I created. It felt satisfying to see the code I had typed out
+            transfer over to a real working webpage, even though the page was very
+            basic.
+            We discussed the upcoming exercise 1 in class which involves creating an
+            interactive hypertext narrative website. I'm very excited for this
+            upcoming assignment, both because I have many ideas for it, and because I
+            want to experiment with the different functions of html I've learned. I
+            want to be able to link many different images to new webpages, creating a
+            story that you are able to click through. I've been working on
+            developing my personal art style more in these past couple of weeks, so I
+            hope to include some of my own drawings in the exercise. Some aspects of
+            HTML are still a bit confusing to me, as all the coding software is a very
+            new experience, but I hope that it will soon come natural to me.
+        </div>
+        <div>weekly a</div>
+    </div>
+
+    <div class="weekly-right" id="B">
+        <div> weekly b</div>
+            <div>The third week of class was very short in comparison to the previous
+    weeks, as we only had one class on Wednesday. That day we learned about
+    CSS and how to add design elements to a website. Again, because this is
+    another aspect of coding a website that is so new to me, it all seemed
+    kind of confusing. There are so many different things that you can do to a
+    website to change the layout to make it specific to what you want, and
+    there are so many short cuts and phrases to remember to help you out when
+    designing. With more practice though, I am hopeful that soon I can design
+    a website with ease. So far, although it can get confusing, I am having
+    fun learning how to use visual studio code. I really enjoy seeing
+    everything I type out come together on a webpage.
+    During week three I had to work on both a PowerPoint presentation about
+    the World Wide Web, and work on my hypertext project. The PowerPoint
+    wasn't too difficult to work on, as my group's topic was pretty broad,
+    covering the history and beginning of the internet. The readings we had to
+    do to get the information on the topic were pretty interesting, and I
+    learned some new things about the beginnings of the internet I didn't
+    know before. Working on my hypertext project, however, was a bit more
+    difficult than working on the PowerPoint. It took me a bit to get the
+    project started because I didn't fully remember how to begin a new
+    project on visual studio code. Once I did get it started, though, I got
+    into a nice flow putting down what I needed to code for my project. It
+    took me a while to fully complete mine because I decided to draw my own
+    images for my concept, but I am very happy with how the project turned
+    out. Some points got complicated, as the number of pages I needed to link
+    to kept increasing, but I am very satisfied with the end result.
+            </div>
+        </div>
+
+        <div class="weekly-left" id="C">
+            <div>This past week we took a look at how to style our webpages with CSS. As
+                with HTML, I had never heard of CSS before this class. The demonstrations
+                in class helped me gain a basic understanding of how to use CSS, however
+                there are so many things you can do that it feels a bit overwhelming.
+                Especially because I have very limited experience in programming in
+                general, sometimes the tutorials in class and online are a bit confusing.
+                For me, CSS is more frustrating than HTML, so I definitely need more
+                practice experimenting with it. This weekend I tried to start working on
+                my 5 variations project, but for some reason I couldn't get the CSS
+                elements I was inputting to show up on the webpage. I'm not sure what
+                I'm doing wrong with it, but I'll figure it out soon.
+                Programming so far, although only at a very basic level, has been fun and
+                satisfying, so I hope CSS won't continue to frustrate me. I have a lot
+                of ideas for the different ways I can make my five variations look, so I
+                hope to be able to put what I'm thinking into a webpage successfully.
+                In addition to learning about CSS, my group presented our presentation
+                about the World Wide Web. The presentation and discussion around the topic
+                went well, and I feel like I learned a lot about the internet. I haven't
+                presented a PowerPoint in a while, so I was a bit nervous about it, but
+                after we got into the flow of the presentation it felt okay.
+            </div>
+            <div>weekly c</div>
+        </div>
+
+        <div class="weekly-right" id="D">
+            <div>weekly d </div>
+            <div>At the start of the fifth week, our second exercise, five variations, was
+    due. Because I had some trouble getting the CSS on my project to work, I
+    spent a lot of time over the previous weekend getting the project ready
+    for class. It was fun experimenting with the different aspects of CSS, and
+    discovering what I can do with a webpage. I tried to include a diverse
+    range of styles to my five webpages, making each of them look unique and
+    different. Overall, I was decently proud of how my webpages turned out,
+    however there is still a lot I have to learn with CSS. In class, we went
+    through everyone's five variations project which I really enjoyed. I got
+    to see all the ways people experimented with CSS, which gave me some ideas
+    for what I might want to do in the future. I'm looking forward to our
+    next website project, andI hope I can create something I will be very
+    proud of. In the future, as well, I would like to continue using the
+    coding skills I learned in this class to make webpages for personal and
+    artistic use.
+    This week, we also had our second group discussion on interfaces. This
+    discussion was particularly interesting to me because I don't have a lot
+    of prior knowledge on interfaces and the history around them. I had read
+    the article "What Screens Want", and it was interesting to see and
+    think about the way interfaces have developed over the years. I had never
+    really thought about how to improve interfaces or why they are the way
+    they are, so I enjoyed hearing what people had to say about this topic.
+            </div>
+        </div>
+
+        <div class="weekly-left" id="E">
+            <div>This past week, week 7 of the class, we began to think about and create a
+                simple structure for our main website portfolio project. Using HTML and
+                some simple CSS we were able to create a navigation bar to access
+                different pages for our websites. We also learned different ways to style
+                images, specifically how to get an image to change its size with the size
+                of the page. Next week our project proposals are due, so I have been
+                working on my idea throughout the week. My main idea is to create an
+                underwater inspired page, where the fish is your cursor as you travel
+                through the different pages. I have a few different websites I want to use
+                for inspiration, but the elements I want to use from them seem pretty
+                complex. I really hope that I will be able to create all the ideas for the
+                website I have planned in my proposal. There are still a lot of elements
+                of CSS and HTML that I'm not the best at using, but with the next weeks
+                of class I think I'll be able to figure out how to create the website I
+                want.
+                This week on Friday we had another group discussion, this one being about
+                online identities. It was interesting to hear about the way these
+                identities play a role in politics, and how online identities can create
+                both good and bad spaces on the internet. I enjoy how we have the
+                discussions one class day out of the week as a way to switch up how we
+                spend class time.
+            </div>
+            <div>weekly e</div>
+        </div>
+
+    <div class="weekly-right" id="F">
+        <div>weekly f</div>
+             <div>Week 9 we went over some more important elements that we
+        might want to use in our website portfolio project, such as parallax and
+        on scroll events. My personal project involves creating an
+        underwater/ocean theme portfolio website, and I can see myself utilizing
+        parallax for the movement of the underwater creates, and possibly on
+        scroll events as well. Some of the specific movements and interactive
+        elements I want to use in my website I won't be able to do right away, as
+        I need to learn Java script to incorporate them, however I'm still excited
+        for the outcome of the first version of the webpage. I really want to be
+        able to create an exciting and aesthetically pleasing page for the viewer
+        to visit, as well as one that isn't too complicated to navigate.
+        In class we were given time to start working on the base structure on our
+        websites, however this was kind of hard for me at first. I wasn't sure
+        where to start because there are so many elements to even just the first
+        landing page of my website, but I was able to break the elements down from
+        top to bottom and find a good place to start. I haven't had a lot of time
+        so far to work on the website because I've been so busy with other due
+        dates, but I hope to get a lot of work done on the website in the next few
+        weeks as my workload dies down a bit in my other classes.
+             </div>
+    </div>
+
+    <div class="weekly-left" id="G">
+        <div>This past week was a shorter week due to the fact that we didn't have
+            class on Friday because of Veteran's Day. On that Monday we finished up
+            our last of the critiques for project one. For that project we had to
+            start making a homepage for our final project websites. For mine I ended
+            up creating a rough layout for all of the pages I wanted to include, but I
+            still might want to add an about me page to include some fun information
+            about myself. After seeing my other classmates work, I have some more
+            ideas about what I could put on the page. So many people had such creative
+            and fun designs I'm excited to see everyone's finished products. I'm
+            really hoping that my finished product will look like the plan I had
+            sketched out, or at the very least really close to it. I'm still unsure
+            how to add the animations I want to add but we'll probably learn about it
+            soon.
+            After finishing the critiques, we went into learning about P5.js. Just
+            like everything else we've done in this class so far it seems a bit
+            complicated and confusing to me but with practice I'm sure I can figure it
+            out okay. We have an exercise due this Wednesday to practice drawing
+            shapes with P5.js. I haven't had the time yet over the weekend to look
+            into it yet, but I hope to work on it throughout Monday and Tuesday. From
+            what we've seen so far in class P5.js looks like it can do some pretty
+            cool things for a website so I'm excited to start experimenting with it.
+            
+        </div>
+        <div>weekly g</div>
+    </div>
+
+    <div class="weekly-right" id="H">
+        <div>weekly h</div>
+             <div>This past week we took a look again at P5.js and the different things we can do with it. We also got a
+                workday in class to work on our projects for exercise 4, drawing with code. I hadn't had time to start the
+                exercise until that workday, so I tried to experiment and get a lot done during the class time. I messed
+                around with this one rotation feature, which made it look like any shape was moving around in a 3D
+                space. It looked very cool, but I didn't end up using it in my final exercise. Making the shape move in that
+                way changed the coding of the background which messed up some of the other shapes I had already put
+                on my canvas. P5.js is still a bit confusing to me, and while I was at home working on the exercise I kept
+                running into problems. Whenever I tried to add in more of the math category functions all my previous
+                shapes would disappear, and I'm not sure why. I definitely need to practice experimenting with P5.js a bit
+                more to get the hang of it.
+                Before our last class on that Friday, I had gone to the Art Career Expo in the union to help make
+                connections in the field and look for a potential internship. I had to go before Internet Art because
+                otherwise it would collide with the class time, and I needed to go to the critique that day to see what
+                other people did for their exercises. Seeing everyone's little projects for the exercise was really helpful
+                for me to see what we can do with P5.js, and it gave me some ideas for what I might want to include in
+                my final website.
+                
+             </div>
+    </div>
+
+    <div class="weekly-left" id="I">
+        <div>For this last week I spent a lot of time focusing on adding the finishing touches to my portfolio website.
+            Before this week I had made the base outline for the website, but it was missing a lot of the moving
+            elements that I wanted to include, as well as some of the small fish details. We had learned how to
+            create moving elements with p5.js, so I spent time this week getting the fish and shark in the exercises
+            page to move. It was kind of difficult to get the one large orange fish to move because rather than just
+            moving left to right, the fish needed to move diagonally to the right because of the angle of the GIF.
+            Luckily, with some help, I was able to get the fish to move and look alright. I was also able to get the
+            cursor to look like a fish, which was an aspect of my original design I really wanted to incorporate. I think
+            it adds a fun, interactive element that lets the user make the fish cursor look like it's swimming around
+            the website. Overall, I feel like my website turned out looking pretty similar to my original concept. The
+            underwater fish theme translated well from my drawings to my website, however I wasn't able to do
+            the fish animation I had planned in the beginning, due to time constraints. In the future, I might try to
+            add more to the website so I can put every element I wanted to.
+            
+            
+        </div>
+        <div>weekly i</div>
+    </div>
+
+</div>
+
+</body>
+</html>
